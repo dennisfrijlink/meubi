@@ -1,0 +1,15 @@
+---
+interface Props {
+    name: string;
+}
+
+const { name } = Astro.props;
+---
+
+<div class:list={['uppercase rounded-full font-extrabold text-sm tracking-wider leading-loose px-4 table', { "ikea-colors": name.toLowerCase() === "ikea" }]}>
+    {name}
+</div>
+
+<style>
+    .ikea-colors { background-color: #0058a3; color: #ffdb00; }
+</style>

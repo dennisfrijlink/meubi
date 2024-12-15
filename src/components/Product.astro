@@ -1,0 +1,40 @@
+---
+import Shop from "./Shop.astro";
+
+interface Props {
+  name: string;
+  description: string;
+  image: string;
+  preview: string;
+  price: string;
+  shop: string;
+  url: string;
+}
+
+const { name, description, image, preview, price, shop, url } = Astro.props;
+---
+
+<div class="lg:border-r border-b relative flex flex-col">
+  <div class="p-4 pb-0 absolute z-20">
+    <Shop name={shop} />
+  </div>
+  <div class="w-full p-7 mb-7 group relative">
+    <img
+      class="w-auto h-56 mx-auto relative z-10 group-hover:opacity-0 delay-200"
+      src={image}
+      alt={name}
+    />
+    <img
+      src={preview}
+      alt=""
+      class="h-full object-cover w-full absolute left-0 top-0 opacity-0 group-hover:opacity-100 duration-100 delay-200"
+    />
+  </div>
+  <a class="group p-7 pt-0 flex flex-col justify-end" href={url} target="_blank">
+    <p class="text-xl font-semibold group-hover:underline">{name}</p>
+    <p class="text-sm">{description}</p>
+    <p class="text-lg font-semibold leading-loose">
+      &#8364; {price}
+    </p>
+  </a>
+</div>

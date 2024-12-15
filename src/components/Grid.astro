@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+  logo: string;
+  background?: string;
+}
+
+const { title, logo, background } = Astro.props;
+---
+<div class="shadow-grid bg-white rounded-lg overflow-hidden lg:grid lg:grid-cols-4 mb-10">
+    <div class="p-5 lg:min-h-96 relative overflow-hidden shadow-line lg:h-full h-40">
+        <img class="relative z-10 h-10 w-auto drop-shadow" src={logo} alt=""/>
+        <img class="absolute top-0 left-0 w-full h-full object-cover" src={background} alt={title}/>
+    </div>
+    <slot/>
+</div>
