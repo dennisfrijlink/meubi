@@ -7,5 +7,5 @@ preview: https://www.ikea.com/nl/nl/images/products/luroy-lattenbodem__1273459_p
 price: "20"
 shop: Ikea
 url: https://www.ikea.com/nl/nl/p/luroy-lattenbodem-s09481354/
-gekocht: true
+gekocht: "true"
 ---

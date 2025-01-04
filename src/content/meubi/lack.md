@@ -7,5 +7,5 @@ preview: https://www.ikea.com/nl/nl/images/products/lack-salontafel-wit-gelazuur
 price: "19.99"
 shop: Ikea
 url: https://www.ikea.com/nl/nl/p/lack-salontafel-wit-gelazuurd-eikeneffect-50319029/#content
-gekocht: true
+gekocht: "true"
 ---

@@ -7,5 +7,5 @@ preview: https://www.ikea.com/nl/nl/images/products/gjora-bedframe-berken__11020
 price: "159"
 shop: Ikea
 url: https://www.ikea.com/nl/nl/p/gjora-bedframe-berken-s69156305/
-gekocht: true
+gekocht: "true"
 ---
