@@ -7,4 +7,5 @@ preview: https://www.ikea.com/nl/nl/images/products/ronninge-uitschuifbare-tafel
 price: "269"
 shop: Ikea
 url: https://www.ikea.com/nl/nl/p/ronninge-uitschuifbare-tafel-berken-30507465/
+gekocht: true
 ---

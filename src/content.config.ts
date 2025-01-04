@@ -17,7 +17,8 @@ const meubi = defineCollection({
     price: z.string(),
     shop: z.string(),
     url: z.string(),
-    category: z.string(reference("categories"))
+    category: z.string(reference("categories")),
+    gekocht: z.string().default("false")
   }),
 });
 
