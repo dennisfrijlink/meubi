@@ -11,7 +11,7 @@ const categoriesWithMeubi = categories.map((c) => {
   const meubis = meubi.filter((m) => m.data.category === c.data.title);
   return { category: c, meubis };
 });
-const bought = meubi.filter(m => m.data.gekocht);
+const bought = meubi.filter(m => m.data.gekocht === "true");
 ---
 <BaseLayout>
   <Grid title="Gekocht" logo="/img/categories/gekocht-text.gif" background="/img/categories/gekocht-bg.webp">
